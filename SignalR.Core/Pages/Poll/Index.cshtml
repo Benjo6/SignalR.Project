@@ -1,0 +1,38 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            User:<input type="text" id="userInput" />
+
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+
+    <div class="row">POLL:Who is the greatest player of all time!&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <input type="radio" name="myProject" id="webmvc" value="Pele" />
+            <label for="webmvc">Pele</label>
+            <br /><span id="webmvcBlock"></span><br />
+            <input type="radio" name="myProject" id="webBlazor" value="Maradona" />
+            <label for="webBlazor">Maradona</label>
+            <br /><span id="webBlazorBlock"></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Stem Nu" />
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
